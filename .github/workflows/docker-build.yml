@@ -3,7 +3,7 @@ name: Docker
 on:
   push:
     branches:
-      - docker-vim-be-good
+      - vim-be-good
   schedule:
     - cron: '30 0 * * *'
 
