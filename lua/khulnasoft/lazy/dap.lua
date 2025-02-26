@@ -129,7 +129,7 @@ return {
             end
 
             dap.listeners.after.event_output.dapui_config = function(_, body)
-                if body.category == "console" then
+                if body and body.category == "console" then
                     dapui.eval(body.output) -- Sends stdout/stderr to Console
                 end
             end
