@@ -26,7 +26,7 @@ return {
                 disable = function(lang, buf)
                     if lang == "html" then
                         print("disabled")
-                        return true
+                        return false
                     end
 
                     local max_filesize = 100 * 1024 -- 100 KB
@@ -37,7 +37,7 @@ return {
                             vim.log.levels.WARN,
                             {title = "Treesitter"}
                         )
-                        return true
+                        return false
                     end
                 end,
 
