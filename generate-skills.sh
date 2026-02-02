@@ -27,4 +27,12 @@ echo "Generating skills/vim.testing/SKILL.md..."
 mkdir -p "$SCRIPT_DIR/skills/vim.testing"
 nvim --headless -l "$SCRIPT_DIR/scripts/generate-vim-testing-skill.lua" "$SCRIPT_DIR/skills/vim.testing/SKILL.md"
 
+echo "Generating skills/vim.navigation/SKILL.md..."
+mkdir -p "$SCRIPT_DIR/skills/vim.navigation"
+nvim --headless -l "$SCRIPT_DIR/scripts/generate-vim-nav-skill.lua" "$SCRIPT_DIR/skills/vim.navigation/SKILL.md"
+
+echo "Generating skills/vim.format/SKILL.md..."
+mkdir -p "$SCRIPT_DIR/skills/vim.format"
+nvim --headless -l "$SCRIPT_DIR/scripts/generate-vim-format-skill.lua" "$SCRIPT_DIR/skills/vim.format/SKILL.md"
+
 echo "Done!"
