@@ -3,21 +3,61 @@ name: vim.lsp
 description: Language Server Protocol (LSP) integration
 ---
 
-# Vim LSP Skills
+# Neovim LSP API Reference
 
-This skill covers the LSP configuration and IDE-like features.
+This document contains common API functions used when working with Neovim's LSP client.
 
-## LSP Keybindings
-- `gd`: Go to definition.
-- `K`: Hover information.
-- `<leader>vws`: Workspace symbol search.
-- `<leader>vca`: Code actions.
-- `<leader>vrr`: References.
-- `<leader>vrn`: Rename symbol.
-- `<C-h>`: Signature help.
+---
 
-## Servers Managed
-- lua_ls
-- rust_analyzer
-- gopls
-- zls
+## vim.lsp.buf
+
+These functions are typically called from buffer-local keybindings to interact with the language server.
+
+```lua
+function vim.lsp.buf.definition() end           -- Jump to definition
+function vim.lsp.buf.declaration() end          -- Jump to declaration
+function vim.lsp.buf.type_definition() end      -- Jump to type definition
+function vim.lsp.buf.implementation() end       -- Jump to implementation
+function vim.lsp.buf.hover() end                -- Display hover information
+function vim.lsp.buf.signature_help() end       -- Display signature information
+function vim.lsp.buf.code_action() end          -- Select code action
+function vim.lsp.buf.references() end           -- List all references
+function vim.lsp.buf.rename(new_name) end       -- Rename symbol
+function vim.lsp.buf.format(options) end        -- Format buffer
+function vim.lsp.buf.workspace_symbol(query) end -- Find workspace symbol
+```
+
+---
+
+## vim.lsp.util
+
+Utility functions for LSP integration.
+
+```lua
+function vim.lsp.util.make_range_params() end
+function vim.lsp.util.apply_text_edits(edits, bufnr, offset_encoding) end
+function vim.lsp.util.jump_to_location(location, offset_encoding) end
+```
+
+---
+
+## Internal Configuration (khulnasoft)
+
+Your configuration uses `mason.nvim` and `mason-lspconfig.nvim` to manage servers.
+
+### Managed Servers
+- `lua_ls`: Lua development.
+- `rust_analyzer`: Rust development.
+- `gopls`: Go development.
+- `zls`: Zig development.
+
+### Global Keybindings
+Mapped during `LspAttach`:
+- `gd`: Definition
+- `K`: Hover
+- `<leader>vws`: Workspace Symbol
+- `<leader>vd`: Open Diagnostic Float
+- `<leader>vca`: Code Action
+- `<leader>vrr`: References
+- `<leader>vrn`: Rename
+- `<C-h>`: Signature Help

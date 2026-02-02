@@ -3,15 +3,38 @@ name: vim.diagnostics
 description: Navigation and handling of editor diagnostics
 ---
 
-# Vim Diagnostics Skills
+# Neovim Diagnostics API Reference
 
-This skill covers the handling of errors, warnings, and hints.
+This document covers Neovim's diagnostic subsystem (`vim.diagnostic`).
 
-## Keybindings
-- `<leader>vd`: Open diagnostic float.
-- `[d`: Go to next diagnostic.
-- `]d`: Go to previous diagnostic.
+---
 
-## Configuration
-- Updated in real-time or on save.
-- Floating window border: rounded.
+## vim.diagnostic
+
+Functions for managing and navigating diagnostics.
+
+```lua
+function vim.diagnostic.get(bufnr, opts) end         -- Get diagnostics
+function vim.diagnostic.get_next(opts) end           -- Get next diagnostic
+function vim.diagnostic.get_prev(opts) end           -- Get previous diagnostic
+function vim.diagnostic.goto_next(opts) end          -- Go to next diagnostic
+function vim.diagnostic.goto_prev(opts) end          -- Go to previous diagnostic
+function vim.diagnostic.open_float(opts) end         -- Show diagnostics in a floating window
+function vim.diagnostic.set(namespace, bufnr, diag) end -- Set diagnostics
+function vim.diagnostic.config(opts) end            -- Global diagnostic configuration
+function vim.diagnostic.show(ns, bufnr, diag, opts) end -- Display diagnostics
+function vim.diagnostic.hide(ns, bufnr) end          -- Hide diagnostics
+```
+
+---
+
+## Configuration (khulnasoft)
+
+Your current configuration:
+- `float`: Minimal style, rounded borders, always shows source.
+- `update_in_insert`: Currently set to false (commented out).
+
+### Keybindings
+- `<leader>vd`: `vim.diagnostic.open_float()`
+- `[d`: `vim.diagnostic.goto_next()`
+- `]d`: `vim.diagnostic.goto_prev()`
