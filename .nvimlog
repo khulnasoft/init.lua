@@ -80,3 +80,23 @@ WRN 2026-02-02T19:15:13.374 ?.13541    vim_mktempdir:3325: tempdir create failed
 WRN 2026-02-02T19:15:13.374 ?.13541    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/XVMIBt/nvim.13541.0
 WRN 2026-02-02T19:15:13.401 ?.13543    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
 WRN 2026-02-02T19:15:13.402 ?.13543    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/fMkR81/nvim.13543.0
+WRN 2026-02-02T19:16:30.603 ?.14543    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.604 ?.14543    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/eU79mT/nvim.14543.0
+WRN 2026-02-02T19:16:30.633 ?.14544    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.634 ?.14544    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/sUb20g/nvim.14544.0
+WRN 2026-02-02T19:16:30.662 ?.14545    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.662 ?.14545    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/7m0JMs/nvim.14545.0
+WRN 2026-02-02T19:16:30.690 ?.14547    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.690 ?.14547    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/pF1gLe/nvim.14547.0
+WRN 2026-02-02T19:16:30.714 ?.14548    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.714 ?.14548    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/Ugz1Mi/nvim.14548.0
+WRN 2026-02-02T19:16:30.741 ?.14550    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.741 ?.14550    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/RgYvjy/nvim.14550.0
+WRN 2026-02-02T19:16:30.766 ?.14552    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.767 ?.14552    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/fhhevY/nvim.14552.0
+WRN 2026-02-02T19:16:30.793 ?.14554    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.794 ?.14554    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/rOgSML/nvim.14554.0
+WRN 2026-02-02T19:16:30.820 ?.14556    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.821 ?.14556    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/6AR1cK/nvim.14556.0
+WRN 2026-02-02T19:16:30.847 ?.14558    vim_mktempdir:3325: tempdir create failed: operation not permitted: /var/folders/g4/439j6bh567352p6dtnlhx5000000gq/T/nvim.KhulnaSoft/XXXXXX
+WRN 2026-02-02T19:16:30.848 ?.14558    server_start:199: Failed to start server: operation not permitted: /tmp/nvim.KhulnaSoft/sOlSOY/nvim.14558.0
