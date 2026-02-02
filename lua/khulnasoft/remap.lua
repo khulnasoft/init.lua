@@ -75,6 +75,10 @@ vim.keymap.set("n", "<leader>ca", function()
     require("cellular-automaton").start_animation("make_it_rain")
 end)
 
+vim.keymap.set("n", "<leader>gc", function()
+    require("khulnasoft.git_utils").dev_commit()
+end)
+
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
