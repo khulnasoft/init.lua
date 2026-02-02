@@ -74,6 +74,14 @@ Your custom function to apply colors and handle transparency.
 
 ### Peek.nvim
 Markdown previewer for Neovim.
-- Command: (Implicitly handled by the plugin or mapped as needed).
+
+---
+
+## Startup & Appearance
+
+### Alpha-nvim
+A high-speed, fully customizable dashboard for Neovim.
+- Shows a "Neovim" ASCII header on startup.
+- Uses the `startify` theme for quick access.
 ]])
 f:close()
