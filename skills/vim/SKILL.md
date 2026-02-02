@@ -3,19 +3,56 @@ name: vim
 description: Core Neovim navigation and editing skills
 ---
 
-# Vim Core Skills
+# Neovim Core API Reference
 
-This skill covers the basic Neovim configuration including settings and global remaps.
+This document covers the essential Neovim Lua APIs for automation and configuration.
 
-## Core Settings
-- Relativenumber is enabled.
-- Tabstop/Shiftwidth: 4 spaces.
-- Undofile enabled in ~/.vim/undodir.
-- Leader key: " " (space).
+---
 
-## Global Keybindings
-- `<leader>pv`: Open project view (Ex).
-- `J`/`K` in visual mode: Move lines up/down.
-- `<C-d>`/`<C-u>`: Scroll and center (zz).
-- `<leader>y`: Yank to system clipboard.
-- `<leader>gc`: Automated dev commit.
+## vim.api
+
+The main interface for calling Neovim's internal C functions.
+
+```lua
+-- Buffer operations
+vim.api.nvim_get_current_buf()
+vim.api.nvim_buf_get_lines(bufnr, start, end_, strict)
+vim.api.nvim_buf_set_lines(bufnr, start, end_, strict, lines)
+
+-- Window operations
+vim.api.nvim_get_current_win()
+vim.api.nvim_win_get_cursor(win)
+vim.api.nvim_win_set_cursor(win, {row, col})
+
+-- Keymaps & Commands
+vim.api.nvim_set_keymap(mode, lhs, rhs, opts)
+vim.api.nvim_create_user_command(name, command, opts)
+vim.api.nvim_create_autocmd(event, opts)
+vim.api.nvim_create_augroup(name, opts)
+```
+
+---
+
+## vim.fn
+
+Access to legacy Vimscript functions.
+
+```lua
+vim.fn.expand("%:p")        -- Get current file absolute path
+vim.fn.line(".")            -- Get current line number
+vim.fn.stdpath("config")    -- Get config directory path
+vim.fn.jobstart(cmd, opts)  -- Start an asynchronous job
+```
+
+---
+
+## khulnasoft Custom Utilities
+
+### Git Automation (`<leader>gc`)
+Your configuration includes a custom `dev_commit` utility that:
+1. Runs `git add .`
+2. Commits with a timestamped message.
+3. Pushes to origin asynchronously.
+
+### Reloading (`R`)
+Use the global `R(module_name)` function to reload Lua modules without restarting Neovim.

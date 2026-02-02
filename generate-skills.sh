@@ -12,6 +12,10 @@ nvim --headless -l "$SCRIPT_DIR/scripts/generate-vim-treesitter-skill.lua" "$SCR
 echo "Generating skills/vim.lsp/SKILL.md..."
 nvim --headless -l "$SCRIPT_DIR/scripts/generate-vim-lsp-skill.lua" "$SCRIPT_DIR/skills/vim.lsp/SKILL.md"
 
+echo "Generating skills/vim.git/SKILL.md..."
+mkdir -p "$SCRIPT_DIR/skills/vim.git"
+nvim --headless -l "$SCRIPT_DIR/scripts/generate-vim-git-skill.lua" "$SCRIPT_DIR/skills/vim.git/SKILL.md"
+
 echo "Generating skills/vim.diagnostics/SKILL.md..."
 nvim --headless -l "$SCRIPT_DIR/scripts/generate-vim-diagnostics-skill.lua" "$SCRIPT_DIR/skills/vim.diagnostics/SKILL.md"
 
