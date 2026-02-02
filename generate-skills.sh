@@ -47,4 +47,8 @@ echo "Generating skills/vim.harpoon/SKILL.md..."
 mkdir -p "$SCRIPT_DIR/skills/vim.harpoon"
 nvim --headless -l "$SCRIPT_DIR/scripts/generate-vim-harpoon-skill.lua" "$SCRIPT_DIR/skills/vim.harpoon/SKILL.md"
 
+echo "Generating skills/neovim-ai-agent/SKILL.md..."
+mkdir -p "$SCRIPT_DIR/skills/neovim-ai-agent"
+nvim --headless -l "$SCRIPT_DIR/scripts/generate-neovim-ai-agent-skill.lua" "$SCRIPT_DIR/skills/neovim-ai-agent/SKILL.md"
+
 echo "Done!"
